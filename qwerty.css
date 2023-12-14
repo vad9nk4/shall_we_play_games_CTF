@@ -1,0 +1,46 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    height: 95vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#games_pics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+img {
+    margin: 5vh;
+    height: 30vh;
+    width: auto;
+}
+
+p {
+    font: normal normal normal 20px sans-serif;
+    color: black;
+    text-align: center;
+    margin: 5vh;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+label {
+    font: normal normal normal 20px sans-serif;
+    text-align: center;
+}
+
+input {
+    width: 50%;
+    margin-left: 1vw;

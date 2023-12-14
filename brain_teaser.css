@@ -1,0 +1,66 @@
+body {                                                                                                                                          
+    margin: 0;                                                                                                                                  
+    overflow: hidden;                                                                                                                           
+    width: 100vw;                                                                                                                               
+    height: 100vh;                                                                                                                              
+    display: flex;                                                                                                                              
+    justify-content: center;                                                                                                                    
+    align-items: center;                                                                                                                        
+    background-color: black;                                                                                                                    
+  }                                                                                                                                             
+                                                                                                                                                
+  #container {                                                                                                                                  
+    margin: 0;                                                                                                                                  
+    height: 100vh;                                                                                                                              
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    perspective: 500px;
+  }
+  #container #container__animation {
+    height: 50%;
+    width: 30%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+  }
+  #container #container__animation .cube_face {
+    height: 200px;
+    width: 200px;
+    border: 3px white solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+  #container #container__animation .cube_face#front {
+    transform: rotateX(0deg) rotateY(0deg) translateZ(100px);
+    backface-visibility: hidden;
+  }
+  #container #container__animation .cube_face#back {
+    transform: rotateX(180deg) rotateY(0deg) translateZ(100px);
+    backface-visibility: hidden;
+  }
+  #container #container__animation .cube_face#right {
+    transform: rotateX(0deg) rotateY(90deg) translateZ(100px);
+    backface-visibility: hidden;
+  }
+  #container #container__animation .cube_face#left {
+    transform: rotateX(0deg) rotateY(-90deg) translateZ(100px);
+    backface-visibility: hidden;
+  }
+  #container #container__animation .cube_face#top {
+    transform: rotateX(90deg) rotateY(0deg) translateZ(100px);
+    backface-visibility: hidden;
+  }
+  #container #container__animation .cube_face#bottom {
+    transform: rotateX(-90deg) rotateY(0deg) translateZ(100px);
+    backface-visibility: hidden;
+  }
